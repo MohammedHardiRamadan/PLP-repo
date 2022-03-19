@@ -1,3 +1,63 @@
+<style>
+    #header{
+  
+    }
+    #header-img{
+     width: 100%;
+     Max-width: 150px;
+      height: auto;
+    }
+    #nav-bar{
+  
+    }
+    .nav-link{
+      display: flex;
+      padding-left: 200px;
+    }
+    .grid{
+      display: flex;
+      padding-left: 200px;
+    }
+    .container {
+     margin-right: 5px;
+     margin-top: 200px;
+    }
+    .product{
+      margin-right: 10px;
+    }
+    .how-it-works{
+      margin: 0px 200px;
+    }
+    .pricing{
+      margin-right: -10px;
+    }
+    nav{
+      display: flex;
+      flex-direction: ;
+      margin-top: 0px;
+      padding: 0px 50px;
+    }
+    #email{
+      margin-top: 50px;
+    }
+    #submit{
+      background-color: hsl(60, 100%, 40%);
+    }
+    .block{
+      display: inline-grid;
+    }
+    .dstv-float{
+      float: left;
+    }
+    .startimes-float{
+      float: right;
+    }
+    @media screen and (min-width: 480px) {
+    #submit {
+      background-color: lightgreen;
+    }
+  }
+  </style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +67,107 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <center>
+        <header id="header">
+          <nav id="nav-bar">
+             <a class="nav-link" class="product" href="#products">Products</a>
+             <a class="nav-link" class="how-it-works" href="#How-it-works">How it works</a>
+             <a class="nav-link" class="pricing" href="#pricing">Pricing</a>
+          </nav>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <h1 class="">Ramadan Technology Ventures</h1>
+          <img id="header-img" src="https://i0.wp.com/www.fifty7tech.com/wp-content/uploads/2021/09/dstv-ghana-packages.jpg?resize=218%2C150&ssl=1">
+         <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="Enter your email" pattern="hardmess11@gmail.com" required>
+          </div>
+           <div>
+            <input id="submit" type="submit" name="submit" value="Get Started">
+           </div>
+         </form>
+        </header>
+        <main>
+         <section id="products"  class="container">
+          <h3 class="grid">DSTV</h3>
+           <h6 class="grid">Premium</h6>
+           <h6 class="grid">Compact Plus</h6>
+           <h6 class="grid">Compact</h6>
+           <h6 class="grid">Family</h6>
+           <h6 class="grid">Access</h6>
+           <h6 class="grid">Great Wall Africa</h6>
+         </section>
+          <br>
+         <section id="products">
+          <h3 class="grid">GO TV</h3>
+           <h6 class="grid">Gotv Max</h6>
+           <h6 class="grid">Gotv Plus</h6>
+           <h6 class="grid">Gotv Value</h6>
+           <h6 class="grid">Gotv Life</h6>
+         </section>
+          <br>
+          <section>
+            <h3 class="grid">Startimes<h3>
+            <h6 class="grid">Startimes super</h6>
+            <h6 class="grid">Startimes smart plus</h6>
+            <h6 class="grid">Startimes nova</h6>
+          </section>
+              <br>
+              <br>
+          <section id="How-it-works">
+          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/N9RBHjJ2ACQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </secyion>
+        </main>
+            <br><br><br>
+        <footer id="pricing" class="block">
+          <div>
+          <span class="dstv-float">
+           <div>
+          <div>
+            DSTV
+          </div>
+           <h2>Ghc 390</h2>
+           <ul>
+            <li>Premium</li>
+            <li>Compact Plus</li>
+            <li>Compact</li>
+            <li>Family</li>
+            <li>Access</li>
+            <li>Great Wall Africa</li>
+           </ul>
+           <button id="submit">SELECT</button>
+          </div>
+         </span>
+         <span class="block">
+           <div>
+          <div>
+            GOTV
+          </div>
+           <h2>Ghc 80</h2>
+           <ul>
+            <li>Max</li>
+            <li>Plus</li>
+            <li>Value</li>
+            <li>Life</li>
+           </ul>
+           <button id="submit">SELECT</button>
+          </div>
+           </span>
+          <span class="startimes-float">
+           <div>
+          <div>
+            STARTIMES
+          </div>
+           <h2>Ghc 80</h2>
+           <ul>
+            <li>Super</li>
+            <li>Smart Plus</li>
+            <li>Nova</li>
+           </ul>
+           <button id="submit">SELECT</button>
+          </div>
+            </span>
+        </footer>
+       </center>   
 </body>
 </html>
