@@ -64,31 +64,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
     <title>Document</title>
 </head>
 <body>
-    <center>
+  <div class="container-fluid">
         <header id="header">
           <nav id="nav-bar">
-             <a class="nav-link" class="product" href="#products">Products</a>
-             <a class="nav-link" class="how-it-works" href="#How-it-works">How it works</a>
-             <a class="nav-link" class="pricing" href="#pricing">Pricing</a>
+            <div class="row">
+            <div class="col-xs-3"> <a class="nav-link" class="product" href="#products">Products</a></div>
+            <div class="col-xs-6"> <a class="nav-link" class="how-it-works" href="#How-it-works">How it works</a></div>
+            <div class="col-xs-3"> <a class="nav-link" class="pricing" href="#pricing">Pricing</a>
+            </div></div>
           </nav>
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </header>
+      <center>
+        <main>
           <h1 class="">Ramadan Technology Ventures</h1>
           <img id="header-img" src="https://i0.wp.com/www.fifty7tech.com/wp-content/uploads/2021/09/dstv-ghana-packages.jpg?resize=218%2C150&ssl=1">
          <form id="form" action="https://www.freecodecamp.com/email-submit">
           <div>
             <label for="email">Email</label>
-            <input id="email" type="email" name="email" placeholder="Enter your email" pattern="hardmess11@gmail.com" required>
+            <input id="email" type="email" name="email" placeholder="Enter your email" pattern="example@gmail.com" required>
           </div>
            <div>
-            <input id="submit" type="submit" name="submit" value="Get Started">
+          <input id="submit" type="submit" name="submit" value="Get Started"></>
            </div>
          </form>
-        </header>
-        <main>
-         <section id="products"  class="container">
+          <section id="products" class="container">
+          <div class="row">
+            <div class="col-xs-4">
           <h3 class="grid">DSTV</h3>
            <h6 class="grid">Premium</h6>
            <h6 class="grid">Compact Plus</h6>
@@ -96,23 +103,22 @@
            <h6 class="grid">Family</h6>
            <h6 class="grid">Access</h6>
            <h6 class="grid">Great Wall Africa</h6>
-         </section>
-          <br>
-         <section id="products">
+         </div>
+         <div class="col-xs-4">
           <h3 class="grid">GO TV</h3>
            <h6 class="grid">Gotv Max</h6>
            <h6 class="grid">Gotv Plus</h6>
            <h6 class="grid">Gotv Value</h6>
            <h6 class="grid">Gotv Life</h6>
-         </section>
-          <br>
-          <section>
+         </div>
+         <div class="col-xs-4">
             <h3 class="grid">Startimes<h3>
             <h6 class="grid">Startimes super</h6>
             <h6 class="grid">Startimes smart plus</h6>
             <h6 class="grid">Startimes nova</h6>
-          </section>
-              <br>
+          </div>
+          </div>
+        </section>
               <br>
           <section id="How-it-works">
           <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/N9RBHjJ2ACQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -120,9 +126,9 @@
         </main>
             <br><br><br>
         <footer id="pricing" class="block">
-          <div>
+          <div class="row">
           <span class="dstv-float">
-           <div>
+           <div class="col-xs-4">
           <div>
             DSTV
           </div>
@@ -139,7 +145,7 @@
           </div>
          </span>
          <span class="block">
-           <div>
+           <div class="col-xs-4">
           <div>
             GOTV
           </div>
@@ -154,7 +160,7 @@
           </div>
            </span>
           <span class="startimes-float">
-           <div>
+           <div class="col-xs-4">
           <div>
             STARTIMES
           </div>
@@ -166,8 +172,10 @@
            </ul>
            <button id="submit">SELECT</button>
           </div>
-            </span>
-        </footer>
+            </span>        
+            </div>
+          </footer>
        </center>   
-</body>
+  </div>
+      </body>
 </html>
